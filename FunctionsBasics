@@ -1,0 +1,134 @@
+// Step 1: Define a simple Java program
+
+// Start with the class declaration
+public class MyClass {
+    // Step 2: Create the main method (the entry point of a Java program)
+    public static void main(String[] args) {
+        // Step 3: Call a function from the main method
+        greet(); // Calling a simple function without parameters
+    }
+
+    // Step 4: Write a basic function
+    // This function does not take any input (no parameters)
+    // and does not return anything (void return type)
+    public static void greet() {
+        System.out.println("Hello! Welcome to learning Java functions.");
+    }
+}
+
+// 2. Simple Function Without Parameters
+public class MyClass {
+    public static void main(String[] args) {
+        greet(); // Calling the greet method
+    }
+
+    public static void greet() {
+        System.out.println("Hello! Welcome to learning Java functions.");
+    }
+}
+
+// 3. Function with Parameters
+public class Addition {
+    public static void main(String[] args) {
+        int result = add(5, 10);
+        System.out.println("The sum is: " + result);
+    }
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+}
+
+// 4. Function with Return Type
+public class Square {
+    public static void main(String[] args) {
+        int number = 4;
+        int square = calculateSquare(number);
+        System.out.println("The square of " + number + " is " + square);
+    }
+
+    public static int calculateSquare(int n) {
+        return n * n;
+    }
+}
+
+// 5. Static vs Non-Static Method
+public class StaticExample {
+    public static void main(String[] args) {
+        printStaticMessage();
+        StaticExample example = new StaticExample();
+        example.printInstanceMessage();
+    }
+
+    public static void printStaticMessage() {
+        System.out.println("This is a static method.");
+    }
+
+    public void printInstanceMessage() {
+        System.out.println("This is a non-static method.");
+    }
+}
+
+// 6. Array Return Type
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] numbers = getArray();
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+    }
+
+    public static int[] getArray() {
+        return new int[] {1, 2, 3, 4, 5};
+    }
+}
+
+// 7. String Return Type
+public class StringExample {
+    public static void main(String[] args) {
+        String message = getMessage();
+        System.out.println(message);
+    }
+
+    public static String getMessage() {
+        return "Hello, Java!";
+    }
+}
+
+// 8. Program to Check Even or Odd
+public class EvenOdd {
+    public static void main(String[] args) {
+        int number = 7;
+        System.out.println(number + " is " + (isEven(number) ? "Even" : "Odd"));
+    }
+
+    public static boolean isEven(int num) {
+        return num % 2 == 0;
+    }
+}
+
+// 9. Calculator Program (Addition, Subtraction, Multiplication, Division)
+public class Calculator {
+    public static void main(String[] args) {
+        System.out.println("Addition: " + add(5, 3));
+        System.out.println("Subtraction: " + subtract(5, 3));
+        System.out.println("Multiplication: " + multiply(5, 3));
+        System.out.println("Division: " + divide(6, 3));
+    }
+
+    public static int add(int a, int b) { return a + b; }
+    public static int subtract(int a, int b) { return a - b; }
+    public static int multiply(int a, int b) { return a * b; }
+    public static double divide(int a, int b) { return (double) a / b; }
+}
+
+// 10. Program to Find Maximum of Two Numbers
+public class MaxNumber {
+    public static void main(String[] args) {
+        System.out.println("Maximum is: " + max(10, 20));
+    }
+
+    public static int max(int a, int b) {
+        return (a > b) ? a : b;
+    }
+}
