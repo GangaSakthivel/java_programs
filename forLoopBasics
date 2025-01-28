@@ -1,0 +1,67 @@
+public class JavaPracticePrograms {
+
+    // 1. Print numbers from 10 to 1
+    public static void printNumbersInReverse() {
+        System.out.println("Numbers from 10 to 1:");
+        for (int i = 10; i >= 1; i--) {
+            System.out.println(i);
+        }
+        System.out.println(); // Empty line for separation
+    }
+
+    // 2. Calculate the product of numbers from 1 to 5
+    public static void calculateProduct() {
+        int product = 1;
+        for (int i = 1; i <= 5; i++) {
+            product *= i;
+        }
+        System.out.println("Product of numbers from 1 to 5: " + product);
+        System.out.println();
+    }
+
+    // 3. Iterate over an array and print squares
+    public static void printArraySquares() {
+        int[] numbers = {5, 15, 25, 35, 45};
+        System.out.println("Array elements and their squares:");
+        for (int i = 0; i < numbers.length; i++) {
+            int square = numbers[i] * numbers[i];
+            System.out.println("Number: " + numbers[i] + ", Square: " + square);
+        }
+        System.out.println();
+    }
+
+    // 4. Sum of even numbers between 1 and 20
+    public static void sumOfEvenNumbers() {
+        int sum = 0;
+        for (int i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+        System.out.println("Sum of even numbers between 1 and 20: " + sum);
+        System.out.println();
+    }
+
+    // 5. Find the largest number in an array
+    public static void findLargestNumber() {
+        int[] numbers = {42, 56, 78, 12, 67, 89, 23};
+        int largest = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+        }
+        System.out.println("Largest number in the array: " + largest);
+        System.out.println();
+    }
+
+    // Main method to call all the programs
+    public static void main(String[] args) {
+        // Call each method
+        printNumbersInReverse();
+        calculateProduct();
+        printArraySquares();
+        sumOfEvenNumbers();
+        findLargestNumber();
+    }
+}
